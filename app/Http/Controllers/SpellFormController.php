@@ -18,8 +18,13 @@ class SpellFormController extends Controller
                 'going_on' => 'nullable|string',
                 'previous_contact' => 'required|string',
             ]);
+
+            $validated['payment_status'] = 'pending';
+            $validated['video_sended'] = false;
+
             $case = UserCase::create($validated);
-            return redirect()->back()->with('success', 'Case information has been added successfully!');
+
+            return redirect()->route('payment', ['uuid' => $case->uuid]);
         } catch (\Illuminate\Validation\ValidationException $e) {
             return redirect()->back()->withErrors($e->errors())->withInput();
         } catch (\Exception $e) {

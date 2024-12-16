@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class UserCase extends Model
 {
     use HasFactory;
 
-    protected $table = 'cases'; // Link this model to the 'cases' table
+    protected $table = 'cases';
 
-    // Allowed fields for mass assignment
     protected $fillable = [
         'name',
         'email',
@@ -19,5 +19,17 @@ class UserCase extends Model
         'third_part',
         'going_on',
         'previous_contact',
+        'uuid',
+        'payment_status',
+        'video_sended',
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($model) {
+            $model->uuid = (string) Str::uuid();
+        });
+    }
 }
