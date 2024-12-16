@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="bg-gradient-to-br from-white to-red-500 h-full w-full p-20">
+<div class="bg-gradient-to-br from-white to-red-500 h-full w-full p-10 lg:p-20">
     <div class="flex gap-20">
         <div class="hidden md:block sticky content-center top-0 h-full">
             <img class="mx-auto h-96 rounded-md flex mt-10" src="{{asset('imgs/img.png')}}" />
