@@ -24,7 +24,7 @@ class SpellFormController extends Controller
 
             $case = UserCase::create($validated);
 
-            return redirect()->route('payment', ['uuid' => $case->uuid]);
+//            return redirect()->route('payment', ['uuid' => $case->uuid]);
         } catch (\Illuminate\Validation\ValidationException $e) {
             return redirect()->back()->withErrors($e->errors())->withInput();
         } catch (\Exception $e) {
