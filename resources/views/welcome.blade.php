@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="w-full">
-            <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4 mt-5 mb-5">
+            <div class="grid  grid-cols-1 lg:grid-cols-2 place-items-center gap-4 mt-5 mb-5">
                 @foreach ([
                     ['id' => 'third-party-removal', 'title' => 'Third-party Removal', 'description' => 'Remove a 3rd party and get your soulmate back', 'price' => '200$', 'img' => 'imgs/spells/3rd-removal.jpg'],
                     ['id' => 'binding', 'title' => 'Binding Spell', 'description' => 'Align them with your desires', 'price' => '200$', 'img' => 'imgs/spells/binding.jpg'],
