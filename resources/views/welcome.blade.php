@@ -34,7 +34,7 @@
                     ['id' => 'come-back', 'title' => 'Come Back To Me', 'description' => 'Reconciles lovers, friends, & family', 'price' => '175$', 'img' => 'imgs/spells/love.png'],
                     ['id' => 'domination', 'title' => 'Domination Spell', 'description' => 'Get what you want how you want it', 'price' => '250$', 'img' => 'imgs/spells/love.png'],
                     ['id' => 'expedite', 'title' => 'Expedite Any Spell', 'description' => 'Get your spell within 24 hours', 'price' => '100$', 'img' => 'imgs/spells/love.png'],
-                    ['id' => 'custom-charm', 'title' => 'Custom Charm', 'description' => 'Available options: Protection, Cord Cutting, Good Luck Charm, Self Love Charm, Inner Peace, and Mental Wellness', 'price' => '100$', 'img' => 'imgs/spells/love.png'],
+                    ['id' => 'custom-charm', 'title' => 'Custom Charm', 'description' => 'Available options: Protection, Cord Cutting, Good Luck Charm, etc', 'price' => '100$', 'img' => 'imgs/spells/love.png'],
                 ] as $spell)
                     <div class="w-11/12 h-64 text-white flex bg-black bg-opacity-60 rounded-xl">
                         <img class="w-6/12 h-full rounded-tl-xl rounded-bl-xl" src="{{asset($spell['img'])}}" />
