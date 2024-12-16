@@ -23,6 +23,7 @@ class SpellFormController extends Controller
             $validated['video_sended'] = false;
 
             $case = UserCase::create($validated);
+            return redirect()->back()->with('success', 'Your information has been saved. Please proceed with the payment.');
 
 //            return redirect()->route('payment', ['uuid' => $case->uuid]);
         } catch (\Illuminate\Validation\ValidationException $e) {
