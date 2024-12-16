@@ -15,8 +15,11 @@ return new class extends Migration
     {
         Schema::create('cases', function (Blueprint $table) {
             $table->id(); // Primary Key
+            $table->uuid('uuid')->unique();
             $table->string('name'); // Name of the person
             $table->string('email'); // Email of the person
+            $table->string('payment_status')->default('pending');
+            $table->boolean('video_sended')->default(false);
             $table->string('specific_person')->nullable(); // Details about a specific person (optional)
             $table->string('third_part')->nullable(); // Details about third party (optional)
             $table->text('going_on')->nullable(); // Description of what's going on (optional)
