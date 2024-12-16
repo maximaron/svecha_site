@@ -19,8 +19,7 @@ class Payment extends Component
         $case = UserCase::where('uuid', $this->uuid)->firstOrFail();
         $case->update(['payment_status' => 'done']);
 
-        session()->flash('success', 'Payment successful!');
-//        return redirect()->route('home');
+        session()->flash('success', 'Payment successful! We will send you a video on your email soon.!');
     }
 
     public function render()
