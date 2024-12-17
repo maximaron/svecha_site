@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="bg-gradient-to-br from-white to-red-500 h-full w-full p-10 lg:p-20">
+<div class="bg-gradient-to-b from-red-400 to-red-500 h-full w-full p-5 lg:p-20 font-lobster">
     <div class="flex gap-20">
-        <div class="hidden md:block sticky content-center top-0 h-full">
-            <img class="mx-auto h-96 rounded-md flex mt-10" src="{{asset('imgs/img.png')}}" />
+        <div class="text-white hidden md:block sticky content-center top-0 h-full">
+            <img class="mx-auto h-96 rounded-md flex mt-10" src="{{asset('imgs/mary.png')}}" />
             <p class="text-center mt-5 text-3xl font-bold">Mary K</p>
             <p class="text-center mt-5 w-full text-xl">Lets manifest your desires together</p>
-            <div class="flex gap-x-5 mt-2">
+            <div class="flex mx-auto content-center justify-center gap-x-5 mt-2">
                 <div>
                     <a href=https://www.instagram.com/hescomingbackgirl?igsh=MWp4bmlsbmp1Nnd0bg==" target="_blank" rel="noopener noreferrer">
                         <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
@@ -29,14 +29,14 @@
                 @foreach ([
                     ['id' => 'third-party-removal', 'title' => 'Third-party Removal', 'description' => 'Remove a 3rd party and get your soulmate back', 'price' => '200$', 'img' => 'imgs/spells/3rd-removal.jpg'],
                     ['id' => 'binding', 'title' => 'Binding Spell', 'description' => 'Align them with your desires', 'price' => '200$', 'img' => 'imgs/spells/binding.jpg'],
-                    ['id' => 'obsession-illusion', 'title' => 'Obsession Illusion Spell', 'description' => 'Help them focus solely on you', 'price' => '200$', 'img' => 'imgs/spells/3rd-removal.jpg'],
-                    ['id' => 'obsession', 'title' => 'Obsession Spell', 'description' => 'Reignite the Spark', 'price' => '200$', 'img' => 'imgs/spells/love.png'],
-                    ['id' => 'come-back', 'title' => 'Come Back To Me', 'description' => 'Reconciles lovers, friends, & family', 'price' => '175$', 'img' => 'imgs/spells/love.png'],
-                    ['id' => 'domination', 'title' => 'Domination Spell', 'description' => 'Get what you want how you want it', 'price' => '250$', 'img' => 'imgs/spells/love.png'],
-                    ['id' => 'expedite', 'title' => 'Expedite Any Spell', 'description' => 'Get your spell within 24 hours', 'price' => '100$', 'img' => 'imgs/spells/love.png'],
-                    ['id' => 'custom-charm', 'title' => 'Custom Charm', 'description' => 'Available options: Protection, Cord Cutting, Good Luck Charm, etc', 'price' => '100$', 'img' => 'imgs/spells/love.png'],
+                    ['id' => 'obsession-illusion', 'title' => 'Obsession Illusion Spell', 'description' => 'Help them focus solely on you', 'price' => '200$', 'img' => 'imgs/spells/illusion.png'],
+                    ['id' => 'obsession', 'title' => 'Obsession Spell', 'description' => 'Reignite the Spark', 'price' => '200$', 'img' => 'imgs/spells/spark.png'],
+                    ['id' => 'come-back', 'title' => 'Come Back To Me', 'description' => 'Reconciles lovers, friends, & family', 'price' => '175$', 'img' => 'imgs/spells/come_back.png'],
+                    ['id' => 'domination', 'title' => 'Domination Spell', 'description' => 'Get what you want how you want it', 'price' => '250$', 'img' => 'imgs/spells/domination.png'],
+                    ['id' => 'expedite', 'title' => 'Expedite Any Spell', 'description' => 'Get your spell within 24 hours', 'price' => '100$', 'img' => 'imgs/spells/magic.png'],
+                    ['id' => 'custom-charm', 'title' => 'Custom Charm', 'description' => 'Available options: Protection, Cord Cutting, Good Luck Charm, etc', 'price' => '100$', 'img' => 'imgs/spells/custom.png'],
                 ] as $spell)
-                    <div class="w-11/12 h-64 text-white flex bg-black bg-opacity-60 rounded-xl">
+                    <div class=" w-full lg:w-11/12 h-64 text-white flex bg-black bg-opacity-60 rounded-xl">
                         <img class="w-6/12 h-full rounded-tl-xl rounded-bl-xl" src="{{asset($spell['img'])}}" />
                         <div class="ml-2 mt-2">
                             <p class="font-bold text-2xl">{{ $spell['title'] }}</p>
