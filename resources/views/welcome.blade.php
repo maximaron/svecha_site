@@ -27,8 +27,8 @@
         <div class="w-full">
             <div class="grid  grid-cols-1 lg:grid-cols-2 place-items-center gap-4 mt-5 mb-5">
                 @foreach ([
-                    ['id' => 'third-party-removal', 'title' => 'Third-party Removal', 'description' => 'Remove a 3rd party and get your soulmate back', 'price' => '200$', 'img' => 'imgs/spells/3rd-removal.jpg'],
-                    ['id' => 'binding', 'title' => 'Binding Spell', 'description' => 'Align them with your desires', 'price' => '200$', 'img' => 'imgs/spells/binding.jpg'],
+                    ['id' => 'third-party-removal', 'title' => 'Third-party Removal', 'description' => 'Remove a 3rd party and get your soulmate back', 'price' => '200$', 'img' => 'imgs/spells/3rd-removal.png'],
+                    ['id' => 'binding', 'title' => 'Binding Spell', 'description' => 'Align them with your desires', 'price' => '200$', 'img' => 'imgs/spells/binding.png'],
                     ['id' => 'obsession-illusion', 'title' => 'Obsession Illusion Spell', 'description' => 'Help them focus solely on you', 'price' => '200$', 'img' => 'imgs/spells/illusion.png'],
                     ['id' => 'obsession', 'title' => 'Obsession Spell', 'description' => 'Reignite the Spark', 'price' => '200$', 'img' => 'imgs/spells/spark.png'],
                     ['id' => 'come-back', 'title' => 'Come Back To Me', 'description' => 'Reconciles lovers, friends, & family', 'price' => '175$', 'img' => 'imgs/spells/come_back.png'],
