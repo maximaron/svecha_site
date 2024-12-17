@@ -5,47 +5,48 @@
         <div class="lg:flex content-center">
             <div class="text-center">
                 @switch($spellName)
-                    @case('third-party-removal')
-                        <p class="text-2xl">Third party removal spell</p>
-                        <img class="mx-auto lg:h-96 rounded-md flex mt-10" src="{{asset('imgs/spells/3rd-removal.jpg')}}" />
-                        <p class="mt-2 text-2xl">This spell helps to remove unwanted third parties from your life.</p>
+                    @case('energy-cleansing')
+                        <p class="text-2xl">Energy Cleansing</p>
+                        <img class="mx-auto lg:h-96 rounded-md flex mt-10" src="{{asset('imgs/spells/3rd-removal.png')}}" />
+                        <p class="mt-2 text-2xl">Helps to clear away negative influences and restore balance.</p>
                         @break
-                    @case('binding')
-                        <p class="text-2xl">Binding spell</p>
+                    @case('harmony-alignment')
+                        <p class="text-2xl">Harmony Alignment</p>
                         <img class="mx-auto lg:h-96 rounded-md flex mt-10" src="{{asset('imgs/spells/binding.jpg')}}" />
-                        <p class="mt-2 text-2xl">This spell binds someone to you, ensuring their loyalty.</p>
+                        <p class="mt-2 text-2xl">Supports building stronger connections and mutual understanding.</p>
                         @break
-                    @case('obsession-illusion')
-                        <p class="text-2xl">Obsession illusion spell</p>
+                    @case('focus-enhancement')
+                        <p class="text-2xl">Focus Enhancement</p>
                         <img class="mx-auto lg:h-96 rounded-md flex mt-10" src="{{asset('imgs/spells/illusion.png')}}" />
-                        <p class="mt-2 text-2xl">This spell creates an illusion of obsession in someone's mind.</p>
+                        <p class="mt-2 text-2xl">Aids in channeling focus and clarity toward a specific goal.</p>
                         @break
-                    @case('obsession')
-                        <p class="text-2xl">Obsession spell</p>
+                    @case('relationship-renewal')
+                        <p class="text-2xl">Relationship Renewal</p>
                         <img class="mx-auto lg:h-96 rounded-md flex mt-10" src="{{asset('imgs/spells/spark.png')}}" />
-                        <p class="mt-2 text-2xl">This spell makes someone obsess over you.</p>
+                        <p class="mt-2 text-2xl">Reignites emotional connections and strengthens relationships.</p>
                         @break
-                    @case('come-back')
-                        <p class="text-2xl">Come back to me spell</p>
+                    @case('reconnection')
+                        <p class="text-2xl">Reconnection</p>
                         <img class="mx-auto lg:h-96 rounded-md flex mt-10" src="{{asset('imgs/spells/come_back.png')}}" />
-                        <p class="mt-2 text-2xl">This spell helps to bring someone back into your life.</p>
+                        <p class="mt-2 text-2xl">Helps to rebuild bridges and restore meaningful relationships.</p>
                         @break
-                    @case('domination')
-                        <p class="text-2xl">Domination spell</p>
+                    @case('confidence-boost')
+                        <p class="text-2xl">Confidence Boost</p>
                         <img class="mx-auto lg:h-96 rounded-md flex mt-10" src="{{asset('imgs/spells/domination.png')}}" />
-                        <p class="mt-2 text-2xl">This spell allows you to dominate someone's will.</p>
+                        <p class="mt-2 text-2xl">Empowers you to take control and achieve your goals.</p>
                         @break
-                    @case('expedite')
-                        <p class="text-2xl">Expedite any spell</p>
+                    @case('quick-resolution')
+                        <p class="text-2xl">Quick Resolution</p>
                         <img class="mx-auto lg:h-96 rounded-md flex mt-10" src="{{asset('imgs/spells/magic.png')}}" />
-                        <p class="mt-2 text-2xl">This spell expedites the effects of any other spell.</p>
+                        <p class="mt-2 text-2xl">Speeds up results to bring faster clarity and outcomes.</p>
                         @break
-                    @case('custom-charm')
-                        <p class="text-2xl">Custom charm spell</p>
+                    @case('customized-charm')
+                        <p class="text-2xl">Customized Charm</p>
                         <img class="mx-auto lg:h-96 rounded-md flex mt-10" src="{{asset('imgs/spells/custom.png')}}" />
-                        <p class="mt-2 text-2xl">This spell is a custom charm tailored to your needs.</p>
+                        <p class="mt-2 text-2xl">A personalized charm tailored to your specific needs.</p>
                         @break
                 @endswitch
+
             </div>
             <div class="flex justify-center mt-4 lg:mt-0">
                 <form class="mx-auto" method="POST" action="{{ route('spell.first_info_add') }}">

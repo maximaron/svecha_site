@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="bg-gradient-to-b from-red-400 to-red-500 h-full w-full p-5 lg:p-20 font-lobster">
-    <div class="flex gap-20">
-        <div class="text-white hidden md:block sticky content-center top-0 h-full">
-            <img class="mx-auto h-96 rounded-md flex mt-10" src="{{asset('imgs/mary.png')}}" />
-            <p class="text-center mt-5 text-3xl font-bold">Mary K</p>
-            <p class="text-center mt-5 w-full text-xl">Lets manifest your desires together</p>
+<div class="bg-gradient-to-b from-red-400 to-red-500 h-full w-full lg:p-20 font-lobster">
+    <div class="lg:flex gap-20">
+        <div class="text-white lg:sticky content-center top-0 h-full">
+            <img class="lg:mx-auto lg:h-96 hidden lg:flex w-full rounded-md  lg:mt-10" src="{{asset('imgs/mary.png')}}" />
+            <p class="text-center  lg:block mt-5 text-3xl font-bold">Mary K</p>
+            <p class="text-center  lg:block mt-5 w-full text-xl">Lets manifest your desires together</p>
             <div class="flex mx-auto content-center justify-center gap-x-5 mt-2">
                 <div>
                     <a href=https://www.instagram.com/hescomingbackgirl?igsh=MWp4bmlsbmp1Nnd0bg==" target="_blank" rel="noopener noreferrer">
@@ -25,17 +25,17 @@
             </div>
         </div>
         <div class="w-full">
-            <div class="grid  grid-cols-1 lg:grid-cols-2 place-items-center gap-4 mt-5 mb-5">
+            <div class="grid px-10 lg:p-0 grid-cols-1 lg:grid-cols-2 place-items-center gap-4 mt-5 mb-5">
                 @foreach ([
-                    ['id' => 'third-party-removal', 'title' => 'Third-party Removal', 'description' => 'Remove a 3rd party and get your soulmate back', 'price' => '200$', 'img' => 'imgs/spells/3rd-removal.png'],
-                    ['id' => 'binding', 'title' => 'Binding Spell', 'description' => 'Align them with your desires', 'price' => '200$', 'img' => 'imgs/spells/binding.png'],
-                    ['id' => 'obsession-illusion', 'title' => 'Obsession Illusion Spell', 'description' => 'Help them focus solely on you', 'price' => '200$', 'img' => 'imgs/spells/illusion.png'],
-                    ['id' => 'obsession', 'title' => 'Obsession Spell', 'description' => 'Reignite the Spark', 'price' => '200$', 'img' => 'imgs/spells/spark.png'],
-                    ['id' => 'come-back', 'title' => 'Come Back To Me', 'description' => 'Reconciles lovers, friends, & family', 'price' => '175$', 'img' => 'imgs/spells/come_back.png'],
-                    ['id' => 'domination', 'title' => 'Domination Spell', 'description' => 'Get what you want how you want it', 'price' => '250$', 'img' => 'imgs/spells/domination.png'],
-                    ['id' => 'expedite', 'title' => 'Expedite Any Spell', 'description' => 'Get your spell within 24 hours', 'price' => '100$', 'img' => 'imgs/spells/magic.png'],
-                    ['id' => 'custom-charm', 'title' => 'Custom Charm', 'description' => 'Available options: Protection, Cord Cutting, Good Luck Charm, etc', 'price' => '100$', 'img' => 'imgs/spells/custom.png'],
-                ] as $spell)
+                    ['id' => 'energy-cleansing', 'title' => 'Energy Cleansing', 'description' => 'Restore balance and positivity to your life', 'price' => '200$', 'img' => 'imgs/spells/3rd-removal.png'],
+                    ['id' => 'harmony-alignment', 'title' => 'Harmony Alignment', 'description' => 'Enhance connection and understanding', 'price' => '200$', 'img' => 'imgs/spells/binding.png'],
+                    ['id' => 'focus-enhancement', 'title' => 'Focus Enhancement', 'description' => 'Help maintain attention and clarity', 'price' => '200$', 'img' => 'imgs/spells/illusion.png'],
+                    ['id' => 'relationship-renewal', 'title' => 'Relationship Renewal', 'description' => 'Strengthen bonds and reignite affection', 'price' => '200$', 'img' => 'imgs/spells/spark.png'],
+                    ['id' => 'reconnection', 'title' => 'Reconnection', 'description' => 'Foster better communication and unity', 'price' => '175$', 'img' => 'imgs/spells/come_back.png'],
+                    ['id' => 'confidence-boost', 'title' => 'Confidence Boost', 'description' => 'Empower yourself to achieve your goals', 'price' => '250$', 'img' => 'imgs/spells/domination.png'],
+                    ['id' => 'quick-resolution', 'title' => 'Quick Resolution', 'description' => 'Accelerate solutions and results', 'price' => '100$', 'img' => 'imgs/spells/magic.png'],
+                    ['id' => 'customized-charm', 'title' => 'Customized Charm', 'description' => 'Options include positivity, luck, protection, and more', 'price' => '100$', 'img' => 'imgs/spells/custom.png'],
+                    ] as $spell)
                     <div class=" w-full lg:w-11/12 h-64 text-white flex bg-black bg-opacity-60 rounded-xl">
                         <img class="w-6/12 h-full rounded-tl-xl rounded-bl-xl" src="{{asset($spell['img'])}}" />
                         <div class="ml-2 mt-2">
@@ -48,6 +48,8 @@
                         </div>
                     </div>
                 @endforeach
+
+
             </div>
             <a href="{{route("terms-of-use")}}">
                 <div class="w-full h-20 bg-opacity-10 bg-black flex items-center justify-center text-white rounded-lg">
